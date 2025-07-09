@@ -1,0 +1,445 @@
+# Churn Prediction Project - Git Ignore File
+# This file specifies which files and directories should be ignored by Git
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be added to the global gitignore or merged into this project gitignore.  For a PyCharm
+#  project, it is recommended to include the following files:
+#  .idea/
+#  *.iml
+#  *.ipr
+#  *.iws
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# =============================================================================
+# MACHINE LEARNING & DATA SCIENCE
+# =============================================================================
+
+# Model files
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Data files
+*.csv
+*.json
+*.parquet
+*.feather
+*.hdf
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.sqlite3
+
+# Large data directories
+data/
+datasets/
+raw_data/
+processed_data/
+external_data/
+
+# Jupyter notebooks (optional - uncomment if you don't want to track notebooks)
+# *.ipynb
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Weights & Biases
+wandb/
+
+# TensorBoard
+runs/
+logs/
+tensorboard_logs/
+
+# =============================================================================
+# GOOGLE CLOUD PLATFORM
+# =============================================================================
+
+# Service account keys
+*.json
+!package.json
+!tsconfig.json
+!jsconfig.json
+!angular.json
+!firebase.json
+!firestore.rules
+!firestore.indexes.json
+!storage.rules
+!database.rules.json
+!functions/package.json
+!functions/tsconfig.json
+!functions/package-lock.json
+!functions/yarn.lock
+
+# GCP credentials
+credentials/
+service-account-keys/
+gcp-credentials/
+
+# Cloud SDK
+.gcloud/
+
+# App Engine
+app.yaml
+app.yml
+cron.yaml
+cron.yml
+dispatch.yaml
+dispatch.yml
+index.yaml
+index.yml
+queue.yaml
+queue.yml
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+
+# Configuration files with sensitive data
+config/user_configs/
+config/local_secrets.py
+config/production_secrets.py
+config/staging_secrets.py
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.staging
+.env.production
+.env.test
+
+# Pipeline artifacts
+churn_pipeline.json
+pipeline_artifacts/
+pipeline_outputs/
+
+# Model artifacts
+models/
+model_artifacts/
+saved_models/
+checkpoints/
+
+# Logs
+logs/
+*.log
+log/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+.temp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# =============================================================================
+# DEPLOYMENT & CONTAINERS
+# =============================================================================
+
+# Docker
+Dockerfile
+docker-compose.yml
+docker-compose.yaml
+.dockerignore
+
+# Kubernetes
+*.yaml
+*.yml
+!config/*.yaml
+!config/*.yml
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# =============================================================================
+# MONITORING & LOGS
+# =============================================================================
+
+# Application logs
+app.log
+application.log
+error.log
+access.log
+
+# Monitoring data
+metrics/
+monitoring/
+prometheus_data/
+
+# =============================================================================
+# TESTING
+# =============================================================================
+
+# Test data
+test_data/
+test_models/
+test_outputs/
+
+# Test coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# =============================================================================
+# DOCUMENTATION
+# =============================================================================
+
+# Generated documentation
+docs/_build/
+docs/build/
+site/
+
+# API documentation
+api_docs/
+swagger/
+
+# =============================================================================
+# SECURITY
+# =============================================================================
+
+# Secrets and sensitive files
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cert
+
+# SSH keys
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# =============================================================================
+# MISC
+# =============================================================================
+
+# Node.js (if using any JS tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache directories
+.cache/
+cache/ 
