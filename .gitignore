@@ -202,7 +202,7 @@ cython_debug/
 *.sqlite3
 
 # Large data directories
-data/
+
 datasets/
 raw_data/
 processed_data/
